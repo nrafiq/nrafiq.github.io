@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nida Rafiq</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+      <script>   
+          jQuery('body').css('display', 'none');
+          jQuery(document).ready(function(){
+                jQuery('body').fadeIn();
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if(thetarget != "_blank"){
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            window.location = thehref
+                        });
+                    }
+                });
+          });
+          setTimeout(function(){
+            jQuery('body').fadeIn()
+          },1000)
+      </script>
+
+      <style>
+
+      body{
+        font-family: 'Lato', sans-serif;
+        background-color:#fff; 
+      }
+
+      #back a{
+        font-family: 'Times New Roman', sans-serif;
+          padding-left: 50px;
+          padding-top: 25px;
+          color: #384343;
+          font-size: 30px;
+          cursor: pointer;
+          width: 100px;
+        }
+
+
+      #content h1{
+        text-align: left;
+        }
+
+      #paragraphs{
+        font-size: 20px;
+      }
+
+      #content{
+        padding-left: 25%;
+        width: 80%;
+      }
+
+      .qa{
+        margin: auto;
+        width: 100%;
+      }
+
+      #qa1{
+        position: relative;
+        right: 50px;
+        width: 120%;
+      }
+      #qa2{
+        position: relative;
+        right: 50px;
+        width: 100%;
+      }
+
+      </style>
+
+      <div id="back">
+      <a href='work.html'>NR</a>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div id='content'>
+        <img src="top.jpg" id='qa2'>
+          <h1><strong>CATT WEB REDESIGN</strong></h1>
+          <br>
+          <br>
+          <p> THE PROJECT <br><br>
+ <strong id='paragraphs'>CATT, short for, Center for Advancement of Trenchless Technologies, is an organization, located at the University of Waterloo, that assists cities in addressing issues they may be facing within their buried infrastructure. Their goal is to use trenchless technologies to solve these problems.<br><br> 
+Over the past couple of months, I have been working with CATT to redesign their website. After a few iterations, the website design is now in the process of completion. </strong> <br><br>
+THE CHALLENGE<br><br>
+ <strong id='paragraphs'>The company was unsure of who their target audience is, which was one of the reasons why the previous website was unsuccessful. Creating an effective user experience for an unknown user is impossible.<br><br>
+I then looked to observation to help me in identifying the users of the CATT website. By conducting several interviews and working with CATT’s partners and sponsors, I was able to narrow down the needs of the users.<br><br>
+I wanted to know the specific reasons why partnering companies use the CATT website. Below are some of the questions I asked when conducting interviews. </strong>
+</p>
+<br><br>
+    <img src="questions.png" class='qa'>
+<br><br>
+    <p><strong id='paragraphs'>After receiving all feedback, the following were the most reoccurring answers.</strong></p>
+    <br><br>
+    <img src="answers.png" class='qa'>
+<br><br>
+<p>THE DESIGN<br><br><strong id='paragraphs'>During the brainstorming, I had many difficulties coming up with something that was not only simple, but made for a smooth experience. Although, the users main purpose was only to register for events, I am hoping for it to be more than that. <br><br> 
+
+Adding the events to the homepage, is a great way to not only promote the upcoming events, but also for the users to get easy access to them as soon as they get on the website. <br><br> 
+
+I also created a separate page for each event, with a register button and a location map so that the event goers can register right away. <br><br> 
+
+For those who are looking to become new CATT members, I created an interactive infographic to provide them will all the membership details.  <br><br> 
+
+However, the design is still in the in finalizing process and will have many more improvements.</strong></p><br><br>
+<img src="1.jpeg" id='qa1'>
+<br><br>
+<img src="2.jpeg" id='qa1'>
+<br><br>
+<img src="3.jpg" id='qa1'>
+<br><br><br><br>
+        </div>
+      </div>
+    </div>
+
+      </body>
+      </html>

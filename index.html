@@ -1,1 +1,104 @@
-# hi 
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nida Rafiq</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+      <script>   
+          jQuery('body').css('display', 'none');
+          jQuery(document).ready(function(){
+                jQuery('body').fadeIn();
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if(thetarget != "_blank"){
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            window.location = thehref
+                        });
+                    }
+                });
+          });
+          setTimeout(function(){
+            jQuery('body').fadeIn()
+          },1000)
+      </script>
+
+    <style>
+        
+        body{
+            background-image: url("bg.png");
+            background-repeat: no-repeat;
+        }
+
+        #mainLetters h1{
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 400px
+        }
+
+        #mainLetters{
+             position: static;
+             padding-top: 18vh;
+             padding-left: 15vw;
+             cursor:context-menu;
+             color: #c59baf;
+        }
+
+        #links{
+            float: right;
+            left: 20vw;
+            top: 37vh;
+        }
+
+        #links a{
+            font-family:'Lato', sans-serif;
+            color: #384343;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6" id="mainLetters">
+        <h1>NR</h1>
+    </div>
+    <div class="col-md-6" id="links">
+        <a href="work.html">PROJECTS</a>        
+        <br>
+        <a href="about.html">ABOUT</a>
+        <br>
+        <a href="about.html">GALLERY</a>
+        <br>
+        <a href="contact.html">CONTACT</a>
+    </div>
+  </div>
+  </div>
+
+ </body>
+
+</html>

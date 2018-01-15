@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nida Rafiq</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+      <script>   
+          jQuery('body').css('display', 'none');
+          jQuery(document).ready(function(){
+                jQuery('body').fadeIn();
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if(thetarget != "_blank"){
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            window.location = thehref
+                        });
+                    }
+                });
+          });
+          setTimeout(function(){
+            jQuery('body').fadeIn()
+          },1000)
+      </script>
+
+      <style>
+
+      body{
+        font-family: 'Lato', sans-serif;
+        background-color:#fff; 
+      }
+
+      #back a{
+        font-family: 'Times New Roman', sans-serif;
+          padding-left: 50px;
+          padding-top: 25px;
+          color: #384343;
+          font-size: 30px;
+          cursor: pointer;
+          width: 100px;
+        }
+
+        h1{
+          padding-top: 25px;
+          text-align: center;
+        }
+
+        #content{
+          text-align: left;
+          margin-right: 300px;
+        }
+
+        #pic img{
+          width: 700px;
+          height: 800px;
+        }
+
+        #pic{
+          float: right;
+          width: 35%;
+        }
+
+        #stuff{
+          text-align: left;
+          word-wrap: break-word;
+          padding-right: 100px;
+          font-size: 20px;
+          width:60%;
+        }
+
+        #stuff h1{
+          color: #c59baf;
+          text-align: left;
+        }
+
+      </style>
+
+      <div id="back">
+      <a href='index.html'>NR</a>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div id='content'>
+          <div id='pic'>
+            <img src="nida.png">
+          </div>
+          <div id='stuff'>
+          <h1><strong>LEARN ABOUT ME</strong></h1>
+          <br><br>
+            <p >Hi, I’m Nida, a GTA based designer out there to create joyful experiences for everyone. I fell in love with design when I joined the Global Business and Digital Arts program at the University of Waterloo. I like the idea of making universal products that are accessible for everyone.<br><br>
+
+ 
+            My obsession with behavioral design, storycraft, aesthetic, and usability are just a few of the reasons why I have been inspired to solve problems. <br><br>
+             
+
+            I am currently working as a product designer at this company called CATT. After conducting tons of design research and identifying who their users are, I am working on re-designing their website.<br><br>
+
+             
+
+             Come join me and let make unforgettable experiences.<br><br>
+
+             
+
+            Thanks for dropping by. </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+      </body>
+      </html>
