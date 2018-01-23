@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nida Rafiq</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+  <script>
+      
+  jQuery('body').css('display', 'none');
+  jQuery(document).ready(function(){
+        jQuery('body').fadeIn();
+        jQuery('a').on('click',function(event){
+            var thetarget = this.getAttribute('target')
+            if(thetarget != "_blank"){
+                var thehref = this.getAttribute('href')
+                event.preventDefault();
+                jQuery('body').fadeOut(function(){
+                    window.location = thehref
+                });
+            }
+        });
+  });
+  setTimeout(function(){
+    jQuery('body').fadeIn()
+  },1000)
+
+  </script>
+
+    <style>
+        
+        body{
+            background-color:#ffffff;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .images{
+          margin-top: 20vh;
+          width: 850px;
+          height: 387px;
+        }
+
+        #top-left {
+          position: relative;
+           width: 110%;
+        }
+        #top-right {
+          position: relative;
+           width: 110%;
+          margin-left: 50px;
+        }
+
+        #bottom{
+          position: relative;
+          width: 110%;
+          margin-left: 60%;
+          margin-bottom: 200px;
+        }
+
+        .padded img:hover {
+          cursor: pointer;
+          opacity: 0.6;
+        }
+
+       
+      #back a{
+        font-family: 'Times New Roman', sans-serif;
+          padding-left: 50px;
+          padding-top: 25px;
+          color: #384343;
+          font-size: 30px;
+          cursor: pointer;
+          width: 100px;
+        }
+
+        #left{
+          font-size: 14px;
+          text-align: center;
+
+        }
+
+        #left p{
+          margin-left: 50px;
+          margin-top: 10px;
+        }
+
+        #sugarescape{
+          position: relative;
+          text-align: center;        }
+
+    </style>
+
+    <div id="back">
+      <a href='index.html'>NR</a>
+    </div>
+
+    <div class="container">
+      <div class='row'>
+        <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery1.jpg' target="_blank"><img src="gallery1.jpg" class='images' id="top-left"></a>
+          </div>
+              </div>
+              <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery2.jpg' target="_blank"><img src="gallery2.jpg" class='images' id="top-right"></a>
+          </div>
+              </div>
+                   <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery3.jpg' target="_blank"><img src="gallery3.jpg" class='images' id="top-left"></a>
+          </div>
+              </div>
+                         <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery4.jpg' target="_blank"><img src="gallery4.jpg" class='images' id="top-right"></a>
+          </div>
+              </div>
+                         <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery5.jpg' target="_blank"><img src="gallery5.jpg" class='images' id="top-left"></a>
+          </div>
+              </div>
+                         <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery6.jpg' target="_blank"><img src="gallery6.jpg" class='images' id="top-right"></a>
+          </div>
+              </div>
+                         <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery7.jpg' target="_blank"><img src="gallery7.jpg" class='images' id="top-left"></a>
+          </div>
+              </div>
+                         <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery8.jpg' target="_blank"><img src="gallery8.jpg" class='images' id="top-right"></a>
+          </div>
+              </div>
+                         <div class="col-md-6">
+          <div class='padded' id='left'>
+            <a href='gallery9.jpg' target="_blank"><img src="gallery9.jpg" class='images' id="bottom"></a>
+          </div>
+              </div>
+            </div>
+          </div>
+
+  </body>
+
+
+</html>
