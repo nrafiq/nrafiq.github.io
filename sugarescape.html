@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nida Rafiq</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+      <script>   
+          jQuery('body').css('display', 'none');
+          jQuery(document).ready(function(){
+                jQuery('body').fadeIn();
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if(thetarget != "_blank"){
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            window.location = thehref
+                        });
+                    }
+                });
+          });
+          setTimeout(function(){
+            jQuery('body').fadeIn()
+          },1000)
+      </script>
+
+      <style>
+
+      body{
+        font-family: 'Lato', sans-serif;
+        background-color:#fff; 
+      }
+
+      #back a{
+        font-family: 'Times New Roman', sans-serif;
+          padding-left: 50px;
+          padding-top: 25px;
+          color: #384343;
+          font-size: 30px;
+          cursor: pointer;
+          width: 100px;
+        }
+
+
+      #content h1{
+        text-align: left;
+        }
+
+      #paragraphs{
+        font-size: 20px;
+      }
+
+      #content{
+        padding-left: 25%;
+        width: 80%;
+      }
+
+      .qa{
+        margin: auto;
+        width: 100%;
+      }
+
+      #qa1{
+        position: relative;
+        right: 50px;
+        width: 120%;
+      }
+      #qa2{
+        position: relative;
+        right: 50px;
+        width: 150%;
+      }
+
+      </style>
+
+      <div id="back">
+      <a href='work.html'>NR</a>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div id='content'>
+        <img src="sugarescape.jpeg" id='qa2'>
+          <h1><strong>SUGAR ESCAPE</strong></h1>
+          <br>
+          <br>
+          <p> BACKGROUND <br><br>
+          <strong id='paragraphs'>
+The goal of this project was to educate children from ages three to six about the
+Canadian Food Guide.<br><br></strong>
+GAME CONCEPT<br><br>
+<strong id='paragraphs'>
+
+The game is designed to consist of four levels, each representing one of the
+categories in the Canadian Food Guide. Each player is on a mission to guide
+Sally and Max, the two characters, conquer the four levels and safely return
+home by making healthy food choices.<br><br></strong>
+GAME DESIGN AND MECHANICS<br><br>
+<strong id='paragraphs'>
+Sugar Escape, is an interactive application where children are taught about the
+basic Canadian Food Groups in a resourceful and fictional storyline. The
+mission begins with the first of four levels, each level representing the four
+different food groups. To return home, Sally or Max must travel to each land and
+capture the nutritious items that relate to the corresponding food category.
+When beginning a level, the strength meter at the top of the screen determines
+whether the player will successfully move forward to the next level.<br><br></strong>
+</p>
+<br><br>
+    <img src="sugar1.jpeg" class='qa'>
+<br><br>
+    <p><strong id='paragraphs'>Each item is designed to illustrate the corresponding food category in the
+Canadian Food Guide. As the players travel to each realm in Sugar Escape,
+healthy and unhealthy items are navigated in the screen, disappearing as the
+player correctly captures the food items. Using the player’s finger to swipe and
+tap the character, points are earned through the strength meter, when
+nutritious items are collected. Once the strength meter has reached its
+distance, another level is unlocked.</strong></p>
+    <br><br>
+    <img src="sugar2.jpeg" class='qa'>
+<br><br>
+    <br><br>
+    <img src="sugar3.jpeg" class='qa'>
+<br><br>
+    <br><br>
+    <img src="sugar4.jpeg" class='qa'>
+<br><br>
+    <br><br>
+    <img src="sugar5.jpeg" class='qa'>
+<br><br>
+<p><strong id='paragraphs'>Using the three levels of Bloom’s Taxonomy, the colourful and fun game
+educates and ensures that children are reciprocating the educational
+significance of the game. Sugar Escape incorporates the opportunity for
+children to assess their memory with The Canadian Food Guide, and recognize
+healthy and unhealthy food choices.<br><br>
+The application is designed using complimentary colours to allure a young
+audience. In representation of this game and the concept of food, bright and
+pastel colours are used to symbolize the appealing appetite of healthy and nonhealthy
+foods.</strong></p><br><br>
+<img src="sugar6.jpeg" id='qa1'>
+<br><br><br><br>
+        </div>
+      </div>
+    </div>
+
+      </body>
+      </html>
